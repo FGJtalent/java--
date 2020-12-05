@@ -1,1 +1,50 @@
+一、类
+写法:
+class 类名{
+}
+例如：
+class  book{
+  public String name ; //成员变量
 
+  public String getName(){
+      id=0	;		//局部变量
+  }
+  public String setName(){
+      this.name;
+  }
+}
+
+
+
+2.属性
+package day01;
+
+public class Person {
+	/*属性定义
+	 * 属性的组成：
+	 * 修饰符  数据类型  属性名称[=值];
+	*/
+	public String name;
+	public int id;
+	public char sex;
+	
+	
+	
+	
+	/*方法--描述可以做的事情
+	 * 
+	 */
+	public static void main(String[] args) {
+		//主方法不属于任何的一个类，
+		
+		//创建一个对象，并把这个对象赋值给person（就是实例化一个对象）
+		Person person=new Person();
+		Person person2=new Person();//可以实例化多个对象
+		//属性方法的使用，通过  对象.属性的方法来进行调用
+		person.name="张三";
+		person.id=2018;
+		person.sex ='男';
+		//输出上述的信息
+		System.out.println("姓名："+person.name+"id:"+person.id+"性别"+person.sex);
+	}
+}
