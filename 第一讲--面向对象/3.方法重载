@@ -1,0 +1,32 @@
+方法重载
+类中的一组方法，方法名相同，但是参数列表不同
+package day02;
+
+public class overload {
+	//println就是方法重载的一种体现
+	
+	/*text方法产生的方法重载
+	 * 参数列表不同
+	 * */
+	public void text() {
+		//相同方法不同的参数，产生不同的结果
+		System.out.println(2);
+		System.out.println("王五");
+	}
+	public void text(int i) {
+		System.out.println(i);
+	}
+	public void text(double i) {
+		System.out.println(i);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		overload t=new overload();
+		//方法重载的调用
+		t.text();
+		t.text(3);
+		t.text(3.14);
+	}
+
+}
